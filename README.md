@@ -48,7 +48,8 @@ SHAP (TreeExplainer, salida en probabilidad) sobre el modelo XGBoost final, para
 
 Resultados
 
-ModeloAccuracyRecall (clase 1)F1-ScoreXGBoost0.6560.7760.601Logistic Regression0.6510.7880.601SVM (RBF)0.6740.7320.600Dummy (baseline)0.5360.2680.278
+<img width="365" height="97" alt="{E645C908-95CE-433A-95C8-43015C8880AB}" src="https://github.com/user-attachments/assets/39e09da7-2237-428c-81b4-46229377ecc6" />
+
 
 Los tres modelos convergen prácticamente al mismo F1, a pesar de tener arquitecturas muy distintas (árboles, lineal, kernel no lineal). Esto es evidencia de que la relación entre las variables predictoras y la infidelidad es mayormente lineal/aditiva — no hay ganancia relevante de usar un modelo más complejo una vez que el feature engineering captura la estructura relevante de los datos. Es un hallazgo más valioso que si un solo modelo hubiera "ganado", porque demuestra dónde reside realmente el techo de rendimiento: en la señal disponible en los datos, no en la capacidad del algoritmo.
 
